@@ -1,0 +1,261 @@
+/* App.css */
+
+body {
+  font-family: "Helvetica";
+}
+
+.App {
+  text-align: center;
+  background-image: url(./asset/bg-image.png);
+  background-size: cover;
+  height: 100%;
+  top: 0px;
+}
+
+.App-header {
+  min-height: 9vh;
+  display: flex;
+  align-items: top;
+  justify-content: flex-start;
+  font-size: calc(3px + 2vmin);
+  color: rgb(0, 0, 0);
+  margin: 0px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 10px;
+  z-index: 3;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.line-header {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+  border: none;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.lang-button,
+.text-button,
+.logo-home {
+  margin: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+a:hover,
+.lang-button:hover,
+.text-button:hover,
+.logo-home:hover {
+  opacity: 0.5;
+}
+
+.whatsapp-image {
+  width: 180px;
+  height: 46px;
+  margin: 20px 50px;
+  position: absolute;
+  right: 0px;
+}
+
+.wa-link {
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  position: absolute;
+  right: 0px;
+  margin: 34px 70px;
+}
+
+.logo-home img {
+  width: 43px;
+  height: 38px;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  margin: 100px  7% 10px 7%;
+}
+
+.App-body h1 {
+  text-align: left;
+  font-weight: normal;
+  margin: 15px 0px;
+  color: black;
+}
+
+.App-body p {
+  text-align: left;
+  font-weight: 100;
+  margin: 5px;
+  max-width: 50%;
+}
+
+.App-body li {
+  text-align: left;
+  font-weight: 100;
+  margin: 5px;
+}
+
+.about-us-section .logo {
+  position: absolute;
+  width: 208px;
+  left: 70%;
+  top: 25%;
+}
+
+.about-us-section {
+  margin-top: 10%;
+  margin-bottom: 35%;
+}
+
+.services-section {
+  height: fit-content;
+  margin-bottom: 10%;
+}
+
+.portofolio-section {
+  height: fit-content;
+  margin-bottom: 10%;
+}
+
+.App-footer{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: fit-content;
+}
+
+.App-footer a {
+  color: white;
+  font-weight: 100;
+  margin: 10px;
+  font-style: normal;
+}
+
+.mark {
+  color: white;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+.lang-button-sidebar,
+.text-button-sidebar,
+.sidebar-button{
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .about-us-section .logo {
+    position: absolute;
+    top: 200px;
+    width: 20%;
+  }
+
+  .lang-button,
+  .text-button,
+  .logo-home{
+    display: none;
+  }
+
+  .lang-button-sidebar,
+  .text-button-sidebar{
+    display: block;
+    margin: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  .sidebar-button img{
+    width: 43px;
+  }
+
+  .lang-button-sidebar {
+    margin-top: 130px;
+  }
+
+  a:hover,
+  .lang-button-sidebar:hover,
+  .text-button-sidebar:hover{
+    opacity: 1;
+  }
+
+  a:active,
+  .lang-button-sidebar:active,
+  .text-button-sidebar:active{
+    opacity: 0.5;
+  }
+
+  .sidebar-button {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 100;
+    z-index: 1;
+  }
+
+  .sidebar-button img {
+    width: 30px;
+  }
+
+  .whatsapp-image{
+    margin: 10px;
+  }
+
+  .wa-link{
+    margin: 23px 30px;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .sidebaropen {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    padding: 20px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+}
